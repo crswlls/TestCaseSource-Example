@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using NUnit.Framework;
@@ -27,7 +28,7 @@ namespace Tests
         /// Returns the input values for the above test based on the value in the production code
         /// </summary>
         /// <returns>The supported versions.</returns>
-        public static IEnumerable<int> GetSupportedVersions()
+        public static IEnumerable GetSupportedVersions()
         {
             return Enumerable.Range(0, Constants.CurrentVersionNumber);
         }

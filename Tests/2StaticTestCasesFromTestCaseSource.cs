@@ -1,5 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
 using NUnit.Framework;
+
 
 namespace Tests
 {
@@ -18,13 +19,13 @@ namespace Tests
             Assert.AreEqual(c, a + b, $"Expected {a} + {b} = {c}");
         }
 
-        public static IEnumerable<object> GetTestCaseInputs()
+        public static IEnumerable GetTestCaseInputs()
         {
             return new []
             {
-                new object[] { 1, 1, 2 },
-                new object[] { 1, 2, 3 },
-                new object[] { 2, 2, 4 },
+                new [] { 1, 1, 2 },
+                new [] { 1, 2, 3 },
+                new [] { 2, 2, 4 },
             };
         }
     }
