@@ -11,13 +11,13 @@ namespace Tests
     public class DynamicTestCases
     {
         /// <summary>
-        /// eg. Test that an upgrade from multiple versions of a file works.
+        /// eg. Test that data can be upgraded from multiple versions.
         /// By using the version number from the production code, we avoid violating the DRY principle and having to maintain
         /// the current version in both the production code and TestCase attributes
         /// </summary>
         /// <param name="versionNumber">The version to upgrade from</param>
         [TestCaseSource(nameof(GetSupportedVersions))]
-        public void FileCanBeUpgraded(int versionNumber)
+        public void DataCanBeUpgraded(int versionNumber)
         {            
             LoadTestDataForVersion(versionNumber);
 
