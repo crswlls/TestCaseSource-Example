@@ -8,11 +8,10 @@ using SrcCode;
 namespace Tests
 {
     [TestFixture]
-    public class DynamicTestCases
+    public class AutomaticallyGeneratedDataUpgradeTests
     {
         /// <summary>
-        /// eg. Test that data can be upgraded from multiple versions.
-        /// By using the version number from the production code, we avoid violating the DRY principle and having to maintain
+        /// By using the version number from the production code directly, we avoid violating the DRY principle and having to maintain
         /// the current version in both the production code and TestCase attributes
         /// </summary>
         /// <param name="versionNumber">The version to upgrade from</param>

@@ -36,7 +36,8 @@
   <ItemGroup>
     <Compile Include="1BasicTestCaseAttributes.cs" />
     <Compile Include="2StaticTestCasesFromTestCaseSource.cs" />
-    <Compile Include="3DynamicTestCases.cs" />
+    <Compile Include="3DataUpgradeTestsWithoutTestCaseSource.cs" />
+    <Compile Include="4AutomaticallyGeneratedDataUpgradeTests.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
